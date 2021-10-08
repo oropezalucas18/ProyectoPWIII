@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\PrograWebIIIBD.mdf" />
+    <Content Include="App_Data\PrograWebIIIBD_log.ldf">
+      <DependentUpon>PrograWebIIIBD.mdf</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
