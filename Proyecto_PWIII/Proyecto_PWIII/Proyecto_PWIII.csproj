@@ -92,7 +92,11 @@
     <Content Include="App_Data\PrograWebIIIBD_log.ldf">
       <DependentUpon>PrograWebIIIBD.mdf</DependentUpon>
     </Content>
-    <Content Include="ComentariosDocente.aspx" />
+    <Content Include="VistaDocente\ComentarioDocenteDocente.aspx" />
+    <Content Include="VistaEstudiante\ComentarioDocenteEstudiante.aspx" />
+    <Content Include="VistaDocente\ComentarioMateriaDocente.aspx" />
+    <Content Include="VistaDocente\ComentarioRequisitoDocente.aspx" />
+    <Content Include="VistaEstudiante\ComentarioRequisitoEstudiante.aspx" />
     <Content Include="Icons\contact.png" />
     <Content Include="Icons\facebook.png" />
     <Content Include="Icons\house.png" />
@@ -102,15 +106,43 @@
     <Content Include="Icons\univalle.png" />
     <Content Include="Icons\youtube.png" />
     <Content Include="Web.config" />
-    <Content Include="ComentarioEstudiante.aspx" />
+    <Content Include="VistaEstudiante\ComentarioMateriaEstudiante.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComentariosDocente.aspx.cs">
-      <DependentUpon>ComentariosDocente.aspx</DependentUpon>
+    <Compile Include="VistaDocente\ComentarioDocenteDocente.aspx.cs">
+      <DependentUpon>ComentarioDocenteDocente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ComentariosDocente.aspx.designer.cs">
-      <DependentUpon>ComentariosDocente.aspx</DependentUpon>
+    <Compile Include="VistaDocente\ComentarioDocenteDocente.aspx.designer.cs">
+      <DependentUpon>ComentarioDocenteDocente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaEstudiante\ComentarioDocenteEstudiante.aspx.cs">
+      <DependentUpon>ComentarioDocenteEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VistaEstudiante\ComentarioDocenteEstudiante.aspx.designer.cs">
+      <DependentUpon>ComentarioDocenteEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaDocente\ComentarioMateriaDocente.aspx.cs">
+      <DependentUpon>ComentarioMateriaDocente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VistaDocente\ComentarioMateriaDocente.aspx.designer.cs">
+      <DependentUpon>ComentarioMateriaDocente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaDocente\ComentarioRequisitoDocente.aspx.cs">
+      <DependentUpon>ComentarioRequisitoDocente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VistaDocente\ComentarioRequisitoDocente.aspx.designer.cs">
+      <DependentUpon>ComentarioRequisitoDocente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VistaEstudiante\ComentarioRequisitoEstudiante.aspx.cs">
+      <DependentUpon>ComentarioRequisitoEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VistaEstudiante\ComentarioRequisitoEstudiante.aspx.designer.cs">
+      <DependentUpon>ComentarioRequisitoEstudiante.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
@@ -120,12 +152,12 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ComentarioEstudiante.aspx.cs">
-      <DependentUpon>ComentarioEstudiante.aspx</DependentUpon>
+    <Compile Include="VistaEstudiante\ComentarioMateriaEstudiante.aspx.cs">
+      <DependentUpon>ComentarioMateriaEstudiante.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ComentarioEstudiante.aspx.designer.cs">
-      <DependentUpon>ComentarioEstudiante.aspx</DependentUpon>
+    <Compile Include="VistaEstudiante\ComentarioMateriaEstudiante.aspx.designer.cs">
+      <DependentUpon>ComentarioMateriaEstudiante.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
