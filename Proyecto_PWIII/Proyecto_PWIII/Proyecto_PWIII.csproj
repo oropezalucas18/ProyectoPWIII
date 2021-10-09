@@ -92,6 +92,7 @@
     <Content Include="App_Data\PrograWebIIIBD_log.ldf">
       <DependentUpon>PrograWebIIIBD.mdf</DependentUpon>
     </Content>
+    <Content Include="ComentariosDocente.aspx" />
     <Content Include="Icons\contact.png" />
     <Content Include="Icons\facebook.png" />
     <Content Include="Icons\house.png" />
@@ -101,11 +102,34 @@
     <Content Include="Icons\univalle.png" />
     <Content Include="Icons\youtube.png" />
     <Content Include="Web.config" />
+    <Content Include="ComentarioEstudiante.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComentariosDocente.aspx.cs">
+      <DependentUpon>ComentariosDocente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComentariosDocente.aspx.designer.cs">
+      <DependentUpon>ComentariosDocente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ComentarioEstudiante.aspx.cs">
+      <DependentUpon>ComentarioEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ComentarioEstudiante.aspx.designer.cs">
+      <DependentUpon>ComentarioEstudiante.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <Content Include="Footer.cshtml" />
     <None Include="Web.Debug.config">
