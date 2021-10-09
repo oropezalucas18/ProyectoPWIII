@@ -28,7 +28,7 @@
             </td>
             <td style="width: 70%; height: 100%; vertical-align: top">
                 <fieldset>
-                    <asp:Button ID="btnEditar" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center" visible="False" CssClass="auto-style2" />
+                    <asp:Button ID="btnEditar" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center" visible="False" Height="25px" CssClass="auto-style2" />
                     <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" Width="353px" Style="text-align: center" visible="False" BackColor="#FF3300"  />
                 </fieldset>
             </td>

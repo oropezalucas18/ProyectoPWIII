@@ -14,6 +14,10 @@
             width: 44%;
         }
 
+        .auto-style5 {
+            margin-left: 74px;
+        }
+
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderBody" runat="server">
@@ -29,7 +33,7 @@
             </td>
             <td style="width: 70%; height: 100%; vertical-align: top">
                 <fieldset>
-                    <asp:Button ID="btnEditar" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center" visible="False" CssClass="auto-style2" />
+                    <asp:Button ID="btnEditar" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center" visible="False" CssClass="auto-style5" Height="25px" />
                     <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" Width="353px" Style="text-align: center" visible="False" BackColor="#FF3300"  />
                 </fieldset>
             </td>
