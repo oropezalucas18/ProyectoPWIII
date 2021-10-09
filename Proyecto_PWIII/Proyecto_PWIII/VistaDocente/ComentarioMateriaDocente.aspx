@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style2 {
-            margin-left: 327px;
+            margin-left: 74px;
         }
 
         .auto-style3 {
@@ -14,10 +14,7 @@
             width: 44%;
         }
 
-        .auto-style5 {
-            width: 1283px;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderBody" runat="server">
 
@@ -32,7 +29,8 @@
             </td>
             <td style="width: 70%; height: 100%; vertical-align: top">
                 <fieldset>
-                    <asp:Button ID="Button2" runat="server" Text="Editar Comentario" Width="353px" Style="text-align: center" visible="False" CssClass="auto-style2" />
+                    <asp:Button ID="btnEditar" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center" visible="False" CssClass="auto-style2" />
+                    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" Width="353px" Style="text-align: center" visible="False" BackColor="#FF3300"  />
                 </fieldset>
             </td>
         </tr>
