@@ -120,12 +120,42 @@
             text-decoration: none;
             color: #C7C7C7;
         }
+        .auto-style1 {
+            width: 177px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <table style="text-align: center" class="auto-style1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul class="mainmenu">
+                                    <li id="ContentPlaceHolder1_liSiu">
+                                        <a id="ContentPlaceHolder1_LKBSiu" title="Gestiona tu información personal" style="display: inline-block; font-size: 13px; height: 50px; width: 80px;"><b style="font-size: 35px">I</b>NICIO</a>
+                                    </li>
+                                    <li id="ContentPlaceHolder1_liMateria">
+                                        <a id="ContentPlaceHolder1_LKBMateria" title="Gestiona tus materias" style="display: inline-block; font-size: 13px; height: 50px; width: 85px;"><b style="font-size: 35px">M</b>ATERIAS</a>
+                                    </li>
+                                    <li id="ContentPlaceHolder1_liAcademica">
+                                        <a id="ContentPlaceHolder1_LKBAcademica" title="Consulta tu información académica" style="display: inline-block; font-size: 13px; height: 50px; width: 95px;"><b style="font-size: 35px">D</b>OCENTE</a>
+                                    </li>
+                                    <li id="ContentPlaceHolder1_liRecursos" class="current">
+                                        <a id="ContentPlaceHolder1_LKBRecursos" title="Accede a recursos" href="PMenu.aspx" style="display: inline-block; font-size: 13px; height: 50px; width: 90px;"><b style="font-size: 35px">M</b>ATERIAS PRE-REQUISITO</a>
+                                    </li>
+                                    <li id="ContentPlaceHolder1_liTips">
+                                        <a id="ContentPlaceHolder1_LKBTips" title="Tips para tomar en cuenta" style="display: inline-block; font-size: 13px; height: 50px; width: 80px;"><b style="font-size: 35px">...</b></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    </header>
     <form id="form1" runat="server">
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
             </asp:ContentPlaceHolder>
         </div>
     </form>
