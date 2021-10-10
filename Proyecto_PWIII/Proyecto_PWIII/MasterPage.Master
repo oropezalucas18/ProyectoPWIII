@@ -8,97 +8,97 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-        footer{
+        footer {
             width: 100%;
             background: #202020;
             color: white;
         }
 
-        .container-footer-all{
+        .container-footer-all {
             width: 100%;
             max-width: 1200px;
             margin: auto;
             padding: 40px;
         }
 
-        .container-body{
+        .container-body {
             display: flex;
             justify-content: space-between;
         }
 
-        .colum1{
+        .colum1 {
             max-width: 400px;
         }
 
-        .colum1 h1{
-            font-size: 22px;
-        }
+            .colum1 h1 {
+                font-size: 22px;
+            }
 
-        .colum1 p{
-            font-size: 14px;
-            color: #C7C7C7;
-            margin-top: 20px;
-        }
+            .colum1 p {
+                font-size: 14px;
+                color: #C7C7C7;
+                margin-top: 20px;
+            }
 
-        .colum2{
-            max-width: 400px;
-
-        }
-
-        .colum2 h1{
-            font-size: 22px;
-        }
-
-        .row{
-            margin-top: 20px;
-            display: flex;
-        }
-
-        .row img{
-            width: 36px;
-            height: 36px;
-        }
-
-        .row label{
-            margin-top: 10px;
-            margin-left: 20px;
-            color: #C7C7C7;
-        }
-
-        .colum3{
+        .colum2 {
             max-width: 400px;
         }
 
-        .colum3 h1{
-            font-size: 22px;
-        }
+            .colum2 h1 {
+                font-size: 22px;
+            }
 
-        .row2{
+        .row {
             margin-top: 20px;
             display: flex;
         }
 
-        .row2 img{
-            width: 36px;
-            height: 36px;
+            .row img {
+                width: 36px;
+                height: 36px;
+            }
+
+            .row label {
+                margin-top: 10px;
+                margin-left: 20px;
+                color: #C7C7C7;
+            }
+
+        .colum3 {
+            max-width: 400px;
         }
+
+            .colum3 h1 {
+                font-size: 22px;
+            }
+
+        .row2 {
+            margin-top: 20px;
+            display: flex;
+        }
+
+            .row2 img {
+                width: 36px;
+                height: 36px;
+            }
+
         .colum1 img {
             width: 300px;
             height: 100px;
         }
 
-        .row2 label{
+        .row2 label {
             margin-top: 10px;
             margin-left: 20px;
             max-width: 200px;
         }
 
-        .container-footer-header{
+        .container-footer-header {
             width: 100%;
             background: #101010;
         }
 
-        .footer{
+        .footer {
             max-width: 1200px;
             margin: auto;
             display: flex;
@@ -106,52 +106,83 @@
             padding: 20px;
         }
 
-        .copyright{
+        .copyright {
             color: #C7C7C7;
         }
 
-        .copyright a{
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
+            .copyright a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
 
-        .information a{
+        .information a {
             text-decoration: none;
             color: #C7C7C7;
         }
+
         .auto-style2 {
             height: 50px;
             width: 98px;
         }
+
         .auto-style4 {
             height: 50px;
             width: 113px;
+        }
+
+        .auto-style5 {
+            width: 144px;
+            height: 141px;
+        }
+
+        .auto-style7 {
+            width: 465px;
+            color: #C7C7C7;
+        }
+
+        .auto-style8 {
+            height: 50px;
+            width: 192px;
         }
     </style>
 </head>
 <body>
     <header>
         <table style="text-align: center" class="container-footer-header">
-                    <tbody>
-                        <tr>
-                            <td class="information a">
-                                <ul class="mainmenu" style="text-align: left">
-                                    <li id="ContentPlaceHolder1_liInicio">
-                                        <a id="ContentPlaceHolder1_LKBInicio" style="display: inline-block; font-size: 13px; height: 50px; width: 80px;"><b style="font-size: 35px">I</b>NICIO</a>
-                                    </li>
-                                    <li id="ContentPlaceHolder1_liMaterias">
-                                        <a id="ContentPlaceHolder1_LKBMaterias" style="display: inline-block; font-size: 13px; " class="auto-style2"><b style="font-size: 35px">M</b>ATERIAS</a></li>
-                                    <li id="ContentPlaceHolder1_liDocente">
-                                        <a id="ContentPlaceHolder1_LKBDocente" style="display: inline-block; font-size: 13px; height: 50px; width: 95px;"><b style="font-size: 35px">D</b>OCENTE</a>
-                                    </li>
-                                    <li id="ContentPlaceHolder1_liCerrarSesion">
-                                        <a id="ContentPlaceHolder1_LKBCerrarSesion" style="display: inline-block; font-size: 13px; " class="auto-style4"><b style="font-size: 35px">C</b>ERRAR SESION</a></li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <tbody>
+                <tr>
+                    <td class="auto-style7">
+                        <ul class="mainmenu" style="text-align: left">
+                            <li id="ContentPlaceHolder1_liInicio">
+                                <a id="ContentPlaceHolder1_LKBInicio" style="display: inline-block; font-size: 13px; height: 50px; width: 80px;"><b style="font-size: 35px">I</b>NICIO</a></li>
+                            <li id="ContentPlaceHolder1_liMaterias">
+                                <select name="materias" style="display: inline-block; font-size: 13px; height: 50px; width: 80px;">
+                                    <option value="materia0">Materia</option>
+                                    <option value="materia1">Animación Digital</option>
+                                    <option value="materia2">Fundamentos de Desarrollo de SW</option>
+                                    <option value="materia3">Fundamentos de las Ciencias de la Computación</option>
+                                    <option value="materia4">Programación I</option>
+                                    <option value="materia5">Matématica Computacional</option>
+                                    <option value="materia6">Inglés Técnico I</option>
+                                </select>
+                            <li id="ContentPlaceHolder1_liMateriasPre">
+                                <a id="ContentPlaceHolder1_LKBMateriasPre" style="display: inline-block; font-size: 13px;" class="auto-style8"><b style="font-size: 35px">M</b>ATERIAS PRE-REQUISITO</a></li>
+                            <li id="ContentPlaceHolder1_liDocente">
+                                <a id="ContentPlaceHolder1_LKBDocente" style="display: inline-block; font-size: 13px; height: 50px; width: 95px;"><b style="font-size: 35px">D</b>OCENTE</a>
+                            </li>
+                            <li id="ContentPlaceHolder1_liCerrarSesion">
+                                <a id="ContentPlaceHolder1_LKBCerrarSesion" style="display: inline-block; font-size: 13px;" class="auto-style4"><b style="font-size: 35px">C</b>ERRAR SESION</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="Icons/logoUnivalle.png" class="auto-style5" />
+                        <br />
+                        <asp:Label runat="server" CssClass="auto-style7">La respuesta científica al futuro</asp:Label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </header>
     <form id="form1" runat="server">
         <div>
