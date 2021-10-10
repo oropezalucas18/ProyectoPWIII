@@ -92,6 +92,9 @@
     <Content Include="App_Data\PrograWebIIIBD_log.ldf">
       <DependentUpon>PrograWebIIIBD.mdf</DependentUpon>
     </Content>
+    <Content Include="Icons\logoUnivalle.png" />
+    <Content Include="IniciarSesion.aspx" />
+    <Content Include="Registrarse.aspx" />
     <Content Include="VistaDocente\ComentarioDocenteDocente.aspx" />
     <Content Include="VistaEstudiante\ComentarioDocenteEstudiante.aspx" />
     <Content Include="VistaDocente\ComentarioMateriaDocente.aspx" />
@@ -109,6 +112,27 @@
     <Content Include="VistaEstudiante\ComentarioMateriaEstudiante.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IniciarSesion.aspx.cs">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.aspx.designer.cs">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion_Registrarse.Master.cs">
+      <DependentUpon>InicioSesion_Registrarse.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioSesion_Registrarse.Master.designer.cs">
+      <DependentUpon>InicioSesion_Registrarse.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Registrarse.aspx.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrarse.aspx.designer.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
     <Compile Include="VistaDocente\ComentarioDocenteDocente.aspx.cs">
       <DependentUpon>ComentarioDocenteDocente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -162,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
+    <Content Include="InicioSesion_Registrarse.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
