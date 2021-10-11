@@ -22,14 +22,14 @@
             <tr id="ContentPlaceHolder1_CURecursosEstudiante_TRMenu">
                 <td style="vertical-align: top" class="auto-style4">
                     <fieldset class="auto-style3">
-                        <asp:TextBox ID="txbComentario" runat="server" Width="585px" Visible="false"></asp:TextBox>
+                        <asp:TextBox ID="txbComentario" runat="server" Width="585px" Visible="false" Height="42px"></asp:TextBox>
                         <table cellpadding="0" cellspacing="0" style="border-width: 0;">
                         </table>
                     </fieldset>
                 </td>
                 <td style="width: 70%; height: 100%; vertical-align: top">
                     <fieldset>
-                        <asp:Button ID="Button2" runat="server" Text="Comentar" Width="353px" Style="text-align: center" CssClass="auto-style2" />
+                        <asp:Button ID="Button2" runat="server" Text="Comentar" Width="353px" Style="text-align: center" CssClass="auto-style2" OnClick="Button2_Click" />
                     </fieldset>
                 </td>
             </tr>
