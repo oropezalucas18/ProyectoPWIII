@@ -11,29 +11,29 @@ namespace CapaNegocios
     public class N_ComentarioMateria
     {
         private readonly D_ComentarioMateria comentarioMateria = new D_ComentarioMateria();
-        public DataTable MostrarComentarioAnimacion()
+        public DataTable ShowAnimacion()
         {
-            return comentarioMateria.MostrarComentarioMateriaAnimacion();
+            return comentarioMateria.ShowAnimacion();
         }
-        public DataTable MostrarComentarioComputacion()
+        public DataTable ShowComputacion()
         {
-            return comentarioMateria.MostrarComentarioMateriaCiencias();
+            return comentarioMateria.ShowCiencias();
         }
-        public DataTable MostrarComentarioMatematica()
+        public DataTable ShowMatematica()
         {
-            return comentarioMateria.MostrarComentarioMateriaMatematica();
+            return comentarioMateria.ShowMatematica();
         }
-        public DataTable MostrarComentarioProgramacionI()
+        public DataTable ShowProgramacionI()
         {
-            return comentarioMateria.MostrarComentarioMateriaProgramacionI();
+            return comentarioMateria.ShowProgramacionI();
         }
-        public DataTable MostrarComentarioInglesI()
+        public DataTable ShowInglesI()
         {
-            return comentarioMateria.MostrarComentarioMateriaInglesI();
+            return comentarioMateria.ShowInglesI();
         }
-        public DataTable MostrarComentarioDesarrolloSoftware()
+        public DataTable ShowDesarrolloSoftware()
         {
-            return comentarioMateria.MostrarComentarioFundamentosSoftware();
+            return comentarioMateria.ShowSoftware();
         }
 
     }
