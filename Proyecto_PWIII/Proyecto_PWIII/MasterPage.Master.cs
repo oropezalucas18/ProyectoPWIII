@@ -13,5 +13,25 @@ namespace Proyecto_PWIII
         {
 
         }
+
+        protected void btnPageInicio_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void btnPageMateriasPre_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/VistaEstudiante/ComentarioRequisitoEstudiante.aspx");
+        }
+
+        protected void btnPageDocente_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/VistaEstudiante/ComentarioDocenteEstudiante.aspx");
+        }
+
+        protected void btnPageCerrarSesion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
