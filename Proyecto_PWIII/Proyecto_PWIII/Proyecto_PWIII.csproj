@@ -94,6 +94,7 @@
     </Content>
     <Content Include="Icons\logoUnivalle.png" />
     <Content Include="IniciarSesion.aspx" />
+    <Content Include="PaginaInicio.aspx" />
     <Content Include="Registrarse.aspx" />
     <Content Include="VistaDocente\ComentarioDocenteDocente.aspx" />
     <Content Include="VistaDocente\ComentarioMateriaDocente.aspx" />
@@ -125,6 +126,13 @@
     </Compile>
     <Compile Include="InicioSesion_Registrarse.Master.designer.cs">
       <DependentUpon>InicioSesion_Registrarse.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaInicio.aspx.cs">
+      <DependentUpon>PaginaInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaInicio.aspx.designer.cs">
+      <DependentUpon>PaginaInicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registrarse.aspx.cs">
       <DependentUpon>Registrarse.aspx</DependentUpon>

@@ -139,8 +139,8 @@
         .auto-style8 {
             height: 50px;
             width: 192px;
-            
         }
+
         .auto-style9 {
             height: 50px;
             width: 212px;
@@ -159,20 +159,42 @@
                                 <ul class="mainmenu" style="text-align: left">
                                     <li id="ContentPlaceHolder1_liInicio">
                                         <asp:Button runat="server" ID="btnPageInicio" Text="INICIO" OnClick="btnPageInicio_Click" Style="display: inline-block; font-size: 15px; height: 50px; width: 80px; background-color: black; color: white" />
-                                    <li id="ContentPlaceHolder1_liMaterias">
-                                        <select name="materias" style="display: inline-block; font-size: 13px; " class="auto-style9">
-                                            <option value="materia0">Materia</option>
-                                            <option value="materia1">Animación Digital</option>
-                                            <option value="materia2">Fundamentos de Desarrollo de SW</option>
-                                            <option value="materia3">Fundamentos de las Ciencias de la Computación</option>
-                                            <option value="materia4">Programación I</option>
-                                            <option value="materia5">Matématica Computacional</option>
-                                            <option value="materia6">Inglés Técnico I</option>
-                                        </select>
-                                    <li id="ContentPlaceHolder1_liMateriasPre">
-                                        <asp:Button runat="server" ID="btnPageMateriasPre" Text="MATERIAS PRE-REQUISITO" OnClick="btnPageMateriasPre_Click" Style="display: inline-block; font-size: 13px; background-color: black; color: white" class="auto-style8" Width="192px" />
+                                        <br />
+                                        <br />
+                                        <li id="ContentPlaceHolder1_liMaterias">
+                                            <asp:DropDownList runat="server" ID="cmbSubjects" Style="display: inline-block; font-size: 15px; background-color: black; color: white" class="auto-style9" OnSelectedIndexChanged="cmbSubjects_SelectedIndexChanged">
+                                                <asp:ListItem Selected="True">MATERIAS</asp:ListItem>
+                                                <asp:ListItem>Animación Digital</asp:ListItem>
+                                                <asp:ListItem>Programación I</asp:ListItem>
+                                                <asp:ListItem>Fundamentos de Desarrollo de Software</asp:ListItem>
+                                                <asp:ListItem>Fundamentos de las Ciencias de la Computación</asp:ListItem>
+                                                <asp:ListItem>Matemática Computacional</asp:ListItem>
+                                                <asp:ListItem>Inglés Técnico I</asp:ListItem>
+                                            </asp:DropDownList>
+                                            <br />
+                                            <br />
+                                            <li id="ContentPlaceHolder1_liMateriasPre">
+                                                <asp:DropDownList runat="server" ID="cmbPreSubjects" Style="display: inline-block; font-size: 15px; background-color: black; color: white" class="auto-style8" Width="234px" Height="51px" OnSelectedIndexChanged="cmbPreSubjects_SelectedIndexChanged">
+                                                    <asp:ListItem Selected="True">MATERIAS PRE-REQUISITO</asp:ListItem>
+                                                    <asp:ListItem>Animación Digital</asp:ListItem>
+                                                    <asp:ListItem>Programación I</asp:ListItem>
+                                                    <asp:ListItem>Fundamentos de Desarrollo de Software</asp:ListItem>
+                                                    <asp:ListItem>Fundamentos de las Ciencias de la Computación</asp:ListItem>
+                                                    <asp:ListItem>Matemática Computacional</asp:ListItem>
+                                                    <asp:ListItem>Inglés Técnico I</asp:ListItem>
+                                                </asp:DropDownList>
+                                                <br />
+                                                <br />
                                     <li id="ContentPlaceHolder1_liDocente">
-                                        <asp:Button runat="server" ID="btnPageDocente" Text="DOCENTE" OnClick="btnPageDocente_Click" Style="display: inline-block; font-size: 15px; background-color: black; color: white; height: 50px; width: 95px;" class="auto-style8" />
+                                        <asp:DropDownList runat="server" ID="cmbTeachers" Style="display: inline-block; font-size: 15px; background-color: black; color: white; " class="auto-style8" Height="43px" Width="145px" OnSelectedIndexChanged="cmbTeachers_SelectedIndexChanged" >
+                                            <asp:ListItem Selected="True">DOCENTES</asp:ListItem>
+                                                    <asp:ListItem>Lic. José Gordillo</asp:ListItem>
+                                                    <asp:ListItem>Ing. Pavel Caceres</asp:ListItem>
+                                                    <asp:ListItem>Ing. David Escalera</asp:ListItem>
+                                                    <asp:ListItem>Ing. Daniel Cosio</asp:ListItem>
+                                        </asp:DropDownList>
+                                        <br />
+                                        <br />
                                     </li>
                                     <li id="ContentPlaceHolder1_liCerrarSesion">
                                         <asp:Button runat="server" ID="btnPageCerrarSesion" Text="CERRAR SESION" OnClick="btnPageCerrarSesion_Click" Style="display: inline-block; font-size: 15px; background-color: black; color: white" class="auto-style4" Width="140px" />
@@ -220,21 +242,21 @@
                         <label>Instagram Univalle</label>
                     </div>
                     <div class="row">
-                        <asp:Image runat="server" ImageUrl="~/Icons/youtube.png"/>
+                        <asp:Image runat="server" ImageUrl="~/Icons/youtube.png" />
                         <label>Youtube Univalle</label>
                     </div>
                 </div>
                 <div class="colum3">
                     <h1>Comunicate</h1>
                     <div class="row2">
-                        <asp:Image runat="server" ImageUrl="~/Icons/house.png"/>
+                        <asp:Image runat="server" ImageUrl="~/Icons/house.png" />
                         <label>
                             Campus Universitario Tiquipaya
                             Calle Guillermina Martinez s/n
                         </label>
                     </div>
                     <div class="row2">
-                        <asp:Image runat="server" ImageUrl="~/Icons/smartphone.png"/>
+                        <asp:Image runat="server" ImageUrl="~/Icons/smartphone.png" />
                         <label>
                             Telefono:
                             (591)4-4318800
@@ -244,7 +266,7 @@
                         </label>
                     </div>
                     <div class="row2">
-                        <asp:Image runat="server" ImageUrl="~/Icons/contact.png"/>
+                        <asp:Image runat="server" ImageUrl="~/Icons/contact.png" />
                         <label>
                             info@univalle.edu
                             SIU
