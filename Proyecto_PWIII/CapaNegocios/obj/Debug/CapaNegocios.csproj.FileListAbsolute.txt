@@ -1,0 +1,11 @@
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaNegocios.dll
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaNegocios.pdb
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaDatos.dll
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\bin\Debug\Entidades.dll
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaDatos.pdb
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\bin\Debug\Entidades.pdb
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.AssemblyReference.cache
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.dll
+D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.pdb
