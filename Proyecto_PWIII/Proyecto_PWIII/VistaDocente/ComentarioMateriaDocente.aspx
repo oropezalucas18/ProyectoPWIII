@@ -26,43 +26,29 @@
         <tr id="ContentPlaceHolder1_CURecursosEstudiante_TRMenu">
             <td style="vertical-align: top" class="auto-style4">
                 <fieldset class="auto-style3">
-                    <asp:TextBox ID="txbComentario" runat="server" Width="585px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="txbComment" runat="server" Width="585px" Visible="false"></asp:TextBox>
                     <table cellpadding="0" cellspacing="0" style="border-width: 0;">
                     </table>
                 </fieldset>
             </td>
             <td style="width: 70%; height: 100%; vertical-align: top">
                 <fieldset>
-                    <asp:Button ID="btnEditar" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center" visible="False" CssClass="auto-style5" Height="25px" />
-                    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" Width="353px" Style="text-align: center" visible="False" BackColor="#FF3300"  />
+                    <asp:Button ID="btnUpdate" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center"  Height="25px" CssClass="auto-style2" OnClick="btnUpdate_Click" />
+                    <asp:Button ID="btnDelete" runat="server" Text="Eliminar" Width="353px" Style="text-align: center"  BackColor="#FF3300" OnClick="btnDelete_Click"  />
                 </fieldset>
             </td>
         </tr>
     </table>
-    <asp:GridView ID="grvListaSolicitudes" AutoGenerateColumns="False" ShowHeaderWhenEmpty="True" runat="server" Width="1381px" CellPadding="4" ForeColor="Black" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellSpacing="1">
-        <columns>
-            <asp:BoundField DataField="nombre" HeaderStyle-CssClass="name" HeaderText="Nombre Estudiante" SortExpression="name">
-                <headerstyle cssclass="name"></headerstyle>
-                <itemstyle cssclass="itName"></itemstyle>
-            </asp:BoundField>
-            <asp:BoundField DataField="comentario" HeaderStyle-CssClass="comentario" HeaderText="Comentario" SortExpression="college">
-                <headerstyle cssclass="comentario"></headerstyle>
-                <itemstyle cssclass="itCollege"></itemstyle>
-            </asp:BoundField>
-            <asp:ButtonField ButtonType="Button" HeaderStyle-CssClass="notify" HeaderText="Edicion" ControlStyle-CssClass="btnVer" Text="Editar">
-                <controlstyle cssclass="btnVer"></controlstyle>
-                <headerstyle cssclass="notify"></headerstyle>
-            </asp:ButtonField>
-        </columns>
-        <footerstyle backcolor="#CCCCCC" />
-        <headerstyle backcolor="Black" font-bold="True" forecolor="White" />
-        <pagerstyle backcolor="#CCCCCC" forecolor="Black" horizontalalign="Left" />
-        <rowstyle backcolor="White" />
-        <selectedrowstyle backcolor="#000099" font-bold="True" forecolor="White" />
-        <sortedascendingcellstyle backcolor="#F1F1F1" />
-        <sortedascendingheaderstyle backcolor="#808080" />
-        <sorteddescendingcellstyle backcolor="#CAC9C9" />
-        <sorteddescendingheaderstyle backcolor="#383838" />
+    <asp:GridView ID="grdShow" runat="server" Width="1753px" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black">
+        <FooterStyle BackColor="#CCCCCC" />
+        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+        <RowStyle BackColor="White" />
+        <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#808080" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#383838" />
     </asp:GridView>
 
 </asp:Content>

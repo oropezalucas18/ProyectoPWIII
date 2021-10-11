@@ -48,6 +48,7 @@
     <Compile Include="D_ComentarioDocente.cs" />
     <Compile Include="D_ComentarioMateria.cs" />
     <Compile Include="D_ComentarioRequisito.cs" />
+    <Compile Include="D_Materia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -15,30 +15,30 @@ namespace Proyecto_PWIII
     {
 
         /// <summary>
-        /// Control txbComentario.
+        /// Control txbComment.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbComentario;
+        protected global::System.Web.UI.WebControls.TextBox txbComment;
 
         /// <summary>
-        /// Control Button2.
+        /// Control btnInsert.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnInsert;
 
         /// <summary>
-        /// Control grvListaComentario.
+        /// Control grdShow.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grvListaComentario;
+        protected global::System.Web.UI.WebControls.GridView grdShow;
     }
 }
