@@ -110,6 +110,20 @@ namespace CapaDatos
             dataAdapter.Fill(search);
             return search;
         }
+        public DataTable ShowAll()
+        {
+            DataTable search = new DataTable();
+            SqlCommand command = new SqlCommand(@"SELECT * 
+                                            FROM CommentSubject")
+            {
+                CommandType = CommandType.Text
+            };
+
+            connection.Open();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+            dataAdapter.Fill(search);
+            return search;
+        }
     }
 
     
