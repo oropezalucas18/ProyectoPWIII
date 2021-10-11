@@ -1,7 +1,4 @@
-
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ComentarioDocenteEstudiante.aspx.cs" Inherits="Proyecto_PWIII.VistaEstudiante.ComentarioDocenteEstudiante" %>
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style2 {
