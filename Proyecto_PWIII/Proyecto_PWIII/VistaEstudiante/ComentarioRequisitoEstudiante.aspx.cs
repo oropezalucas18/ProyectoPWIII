@@ -50,11 +50,7 @@ namespace Proyecto_PWIII
 
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-<<<<<<< HEAD
             cmd.CommandText = @"INSERT INTO CommentRequirement (Description, StudentName, Subject )" + "VALUES (" + txbComment.Text + "," + txbComment.Text + "," + RequirementString + ")";
-=======
-            cmd.CommandText = "INSERT INTO CommentRequirement (Description, StudentName, Subject )" + "VALUES (" + txbComment.Text + "," + txbComment.Text + "," + RequirementString + ")";
->>>>>>> main
             cmd.Connection = sqlConnection1;
 
             sqlConnection1.Open();
