@@ -17,9 +17,7 @@ namespace CapaDatos
         public DataTable ShowDavid()
         {
             DataTable search = new DataTable();
-            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente 
-                                            FROM TeacherComment
-                                            WHERE Teacher = 'David Escalera'")
+            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente FROM TeacherComment WHERE Teacher = 'David Escalera'", connection)
             {
                 CommandType = CommandType.Text
             };
@@ -36,7 +34,7 @@ namespace CapaDatos
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente 
                                             FROM TeacherComment
-                                            WHERE Teacher = 'Daniel Cosio'")
+                                            WHERE Teacher = 'Daniel Cosio'", connection)
             {
                 CommandType = CommandType.Text
             };
@@ -49,18 +47,17 @@ namespace CapaDatos
 
         public DataTable ShowKenny()
         {
-            DataTable search = new DataTable();
-            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente 
+            DataTable data = new DataTable();
+            SqlCommand command = new SqlCommand(@"SELECT Description, StudentName , TeacherName  
                                             FROM TeacherComment
-                                            WHERE Teacher = 'Kenny Vidangos'")
+                                            WHERE Teacher = 'Kenny Vidangos'", connection)
             {
                 CommandType = CommandType.Text
             };
-
             connection.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(search);
-            return search;
+            dataAdapter.Fill(data);
+            return data;
         }
 
         public DataTable ShowPavel()
@@ -68,7 +65,7 @@ namespace CapaDatos
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente 
                                             FROM TeacherComment
-                                            WHERE Teacher= 'Pavel Caceres'")
+                                            WHERE Teacher= 'Pavel Caceres'", connection)
             {
                 CommandType = CommandType.Text
             };
@@ -84,7 +81,7 @@ namespace CapaDatos
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente  
                                             FROM TeacherComment
-                                            WHERE Teacher = 'Jose Gordillo'")
+                                            WHERE Teacher = 'Jose Gordillo'", connection)
             {
                 CommandType = CommandType.Text
             };
@@ -94,20 +91,7 @@ namespace CapaDatos
             dataAdapter.Fill(search);
             return search;
         }
-        public DataTable ShowAll()
-        {
-            DataTable search = new DataTable();
-            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente
-                                            FROM TeacherComment")
-            {
-                CommandType = CommandType.Text
-            };
 
-            connection.Open();
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(search);
-            return search;
-        }
 
     }
 }

@@ -66,7 +66,6 @@ namespace Proyecto_PWIII
                     break;
                 default:
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioMateriaD.ShowAll();
                     break;
             }
         }

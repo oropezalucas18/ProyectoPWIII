@@ -19,7 +19,7 @@ namespace CapaDatos
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, Subject AS Materia
                                             FROM CommentSubject
-                                            WHERE Subject = 'Animacion Digital'")
+                                            WHERE Subject = 'Animacion Digital'", connection)
             {
                 CommandType = CommandType.Text
             };
@@ -36,7 +36,7 @@ namespace CapaDatos
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, Subject AS Materia
                                             FROM CommentSubject
-                                            WHERE Subject = 'Ciencias de la Computacion'")
+                                            WHERE Subject = 'Ciencias de la Computacion'", connection)
             {
                 CommandType = CommandType.Text
             };
@@ -52,7 +52,7 @@ namespace CapaDatos
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, Subject AS Materia
                                             FROM CommentSubject
-                                            WHERE Subject = 'Matematica Computacional'")
+                                            WHERE Subject = 'Matematica Computacional'", connection)
             {
                 CommandType = CommandType.Text
             };
@@ -68,7 +68,7 @@ namespace CapaDatos
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, Subject AS Materia 
                                             FROM CommentSubject
-                                            WHERE Subject = 'Programacion I'")
+                                            WHERE Subject = 'Programacion I'", connection)
             {
                 CommandType = CommandType.Text
             };
@@ -84,7 +84,7 @@ namespace CapaDatos
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, Subject AS Materia
                                             FROM CommentSubject
-                                            WHERE Subject = 'Ingles tecnico I'")
+                                            WHERE Subject = 'Ingles tecnico I'", connection)
             {
                 CommandType = CommandType.Text
             };
@@ -100,7 +100,7 @@ namespace CapaDatos
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, Subject AS Materia
                                             FROM CommentSubject
-                                            WHERE Subject = 'Fundamentos de desarrollo de software'")
+                                            WHERE Subject = 'Fundamentos de desarrollo de software'", connection)
             {
                 CommandType = CommandType.Text
             };
@@ -110,20 +110,7 @@ namespace CapaDatos
             dataAdapter.Fill(search);
             return search;
         }
-        public DataTable ShowAll()
-        {
-            DataTable search = new DataTable();
-            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, Subject AS Materia
-                                            FROM CommentSubject")
-            {
-                CommandType = CommandType.Text
-            };
 
-            connection.Open();
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(search);
-            return search;
-        }
     }
 
     

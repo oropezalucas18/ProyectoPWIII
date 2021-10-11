@@ -52,7 +52,6 @@ namespace Proyecto_PWIII
                     break;
                 default:
                     grdShow.DataSource = null;
-                    grdShow.DataSource = materia.ShowAll();
                     break;
             }
         }
@@ -87,7 +86,6 @@ namespace Proyecto_PWIII
                     break;
                 default:
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioRequisitoD.ShowAll();
                     break;
             }
         }
