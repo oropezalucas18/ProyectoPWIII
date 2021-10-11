@@ -12,104 +12,103 @@ namespace CapaDatos
 {
     public class D_ComentarioMateria
     {
-        
         SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\App_Data\PrograWebIIIBD.mdf;Integrated Security=True;Connect Timeout=30");
 
-        public DataTable MostrarComentarioMateriaAnimacion()
+        public DataTable ShowAnimacion()
         {
-            DataTable resultado = new DataTable();
+            DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
-                                            FROM ComentarioMateria
-                                            WHERE Materia = 'Animacion Digital'")
+                                            FROM CommentSubject
+                                            WHERE Subject = 'Animacion Digital'")
             {
                 CommandType = CommandType.Text
             };
 
             connection.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(resultado);
+            dataAdapter.Fill(search);
             connection.Close();
-            return resultado;
+            return search;
         }
 
-        public DataTable MostrarComentarioMateriaCiencias()
+        public DataTable ShowCiencias()
         {
-            DataTable resultado = new DataTable();
+            DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
-                                            FROM ComentarioMateria
-                                            WHERE Materia = 'Ciencias de la Computacion'")
+                                            FROM CommentSubject
+                                            WHERE Subject = 'Ciencias de la Computacion'")
             {
                 CommandType = CommandType.Text
             };
 
             connection.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(resultado);
-            return resultado;
+            dataAdapter.Fill(search);
+            return search;
         }
 
-        public DataTable MostrarComentarioMateriaMatematica()
+        public DataTable ShowMatematica()
         {
-            DataTable resultado = new DataTable();
+            DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
-                                            FROM ComentarioMateria
-                                            WHERE Materia = 'Matematica Computacional'")
+                                            FROM CommentSubject
+                                            WHERE Subject = 'Matematica Computacional'")
             {
                 CommandType = CommandType.Text
             };
 
             connection.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(resultado);
-            return resultado;
+            dataAdapter.Fill(search);
+            return search;
         }
 
-        public DataTable MostrarComentarioMateriaProgramacionI()
+        public DataTable ShowProgramacionI()
         {
-            DataTable resultado = new DataTable();
+            DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
-                                            FROM ComentarioMateria
-                                            WHERE Materia = 'Programacion I'")
+                                            FROM CommentSubject
+                                            WHERE Subject = 'Programacion I'")
             {
                 CommandType = CommandType.Text
             };
 
             connection.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(resultado);
-            return resultado;
+            dataAdapter.Fill(search);
+            return search;
         }
 
-        public DataTable MostrarComentarioMateriaInglesI()
+        public DataTable ShowInglesI()
         {
-            DataTable resultado = new DataTable();
+            DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
-                                            FROM ComentarioMateria
-                                            WHERE Materia = 'Ingles tecnico I'")
+                                            FROM CommentSubject
+                                            WHERE Subject = 'Ingles tecnico I'")
             {
                 CommandType = CommandType.Text
             };
 
             connection.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(resultado);
-            return resultado;
+            dataAdapter.Fill(search);
+            return search;
         }
 
-        public DataTable MostrarComentarioFundamentosSoftware()
+        public DataTable ShowSoftware()
         {
-            DataTable resultado = new DataTable();
+            DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
-                                            FROM ComentarioMateria
-                                            WHERE Materia = 'Fundamentos de desarrollo de software'")
+                                            FROM CommentSubject
+                                            WHERE Subject = 'Fundamentos de desarrollo de software'")
             {
                 CommandType = CommandType.Text
             };
 
             connection.Open();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(resultado);
-            return resultado;
+            dataAdapter.Fill(search);
+            return search;
         }
     }
 
