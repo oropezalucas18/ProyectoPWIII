@@ -27,18 +27,45 @@ namespace Proyecto_PWIII
         }
 
         protected void cmbSubjects_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Response.Cookies["subject"]["nameSubject"] = cmbSubjects.SelectedValue;
+        {      
+            if (Session["email"].ToString().EndsWith("@univalle.edu"))
+            {
+                Response.Cookies["subject"]["nameSubject"] = cmbSubjects.SelectedValue;
+                Response.Redirect("~/VistaDocente/ComentarioMateriaDocente.aspx");
+            }
+            else
+            {
+                Response.Cookies["subject"]["nameSubject"] = cmbSubjects.SelectedValue;
+                Response.Redirect("~/VistaEstudiante/ComentarioMateriaEstudiante.aspx");
+            }
         }
 
         protected void cmbTeachers_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Response.Cookies["teacher"]["nameTeacher"] = cmbTeachers.SelectedValue;
+            if (Session["email"].ToString().EndsWith("@univalle.edu"))
+            {
+                Response.Cookies["teacher"]["nameTeacher"] = cmbTeachers.SelectedValue;
+                Response.Redirect("~/VistaDocente/ComentarioDocenteDocente.aspx");
+            }
+            else
+            {
+                Response.Cookies["teacher"]["nameTeacher"] = cmbTeachers.SelectedValue;
+                Response.Redirect("~/VistaEstudiante/ComentarioDocenteEstudiante.aspx");
+            }
         }
 
         protected void cmbPreSubjects_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Response.Cookies["presubject"]["namePresubject"] = cmbPreSubjects.SelectedValue;
+            if (Session["email"].ToString().EndsWith("@univalle.edu"))
+            {
+                Response.Cookies["presubject"]["namePresubject"] = cmbPreSubjects.SelectedValue;
+                Response.Redirect("~/VistaDocente/ComentarioRequisitoDocente.aspx");
+            }
+            else
+            {
+                Response.Cookies["presubject"]["namePresubject"] = cmbPreSubjects.SelectedValue;
+                Response.Redirect("~/VistaEstudiante/ComentarioRequisitoEstudiante.aspx");
+            }
         }
     }
 }

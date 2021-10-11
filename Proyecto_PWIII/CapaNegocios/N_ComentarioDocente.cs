@@ -31,9 +31,5 @@ namespace CapaNegocios
         {
             return comentarioDocente.ShowPavel();
         }
-        public DataTable ShowAll()
-        {
-            return comentarioDocente.ShowAll();
-        }
     }
 }

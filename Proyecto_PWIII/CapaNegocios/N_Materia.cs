@@ -35,9 +35,5 @@ namespace CapaNegocios
         {
             return materia.ShowSoftware();
         }
-        public DataTable ShowAll()
-        {
-            return materia.ShowAll();
-        }
     }
 }

@@ -35,10 +35,6 @@ namespace CapaNegocios
         {
             return comentarioMateria.ShowSoftware();
         }
-        public DataTable ShowAll()
-        {
-            return comentarioMateria.ShowAll();
-        }
 
     }
 }

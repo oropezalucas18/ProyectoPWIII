@@ -47,12 +47,10 @@ namespace Proyecto_PWIII
                     break;
             }
             System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PrograWebIIIBD.mdf;Integrated Security=True");
-
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.CommandText = @"INSERT INTO CommentRequirement (Description, StudentName, Subject )" + "VALUES (" + txbComment.Text + "," + txbComment.Text + "," + RequirementString + ")";
             cmd.Connection = sqlConnection1;
-
             sqlConnection1.Open();
             cmd.ExecuteNonQuery();
             sqlConnection1.Close();
@@ -88,7 +86,6 @@ namespace Proyecto_PWIII
                     break;
                 default:
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioRequisitoD.ShowAll();
                     break;
             }
         }

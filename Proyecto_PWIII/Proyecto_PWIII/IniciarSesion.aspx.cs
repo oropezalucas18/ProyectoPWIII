@@ -23,7 +23,19 @@ namespace Proyecto_PWIII
         {
             Response.Cookies["user"]["email"] = txtEmail.Text;
             Response.Cookies["user"]["password"] = txtPassword.Text;
-            Response.Cookies["person"].Expires = DateTime.Now.AddDays(1);
+            Response.Cookies["user"].Expires = DateTime.Now.AddDays(1);
+            if (txtEmail.Text.EndsWith("@univalle.edu"))
+            {
+                Session["emailTeacher"] = txtEmail.Text;
+                Session["passwordTeacher"] = txtPassword.Text;
+                Response.Redirect("PaginaInicio.aspx");
+            }
+            else
+            {
+                Session["emailStudent"] = txtEmail.Text;
+                Session["passwordStudent"] = txtPassword.Text;
+                Response.Redirect("PaginaInicio.aspx");
+            }
         }
     }
 }

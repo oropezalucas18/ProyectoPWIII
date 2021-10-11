@@ -41,7 +41,7 @@ namespace Proyecto_PWIII.VistaEstudiante
                     DocenteString = "David Escalera";
                     break;
                 default:
-                    DocenteString = "";
+                    DocenteString = "Kenny Vidangos";
                     break;
             }
             System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PrograWebIIIBD.mdf;Integrated Security=True");
@@ -82,7 +82,7 @@ namespace Proyecto_PWIII.VistaEstudiante
                     break;
                 default:
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioDocenteD.ShowAll();
+                    grdShow.DataSource = comentarioDocenteD.ShowKenny();
                     break;
             }
         }

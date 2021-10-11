@@ -21,7 +21,7 @@ namespace Proyecto_PWIII
 
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
-            int id = 0;
+            int id = 1;
             System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PrograWebIIIBD.mdf;Integrated Security=True");
 
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
@@ -60,7 +60,6 @@ namespace Proyecto_PWIII
                     break;
                 default:
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioDocenteD.ShowAll();
                     break;
             }
         }

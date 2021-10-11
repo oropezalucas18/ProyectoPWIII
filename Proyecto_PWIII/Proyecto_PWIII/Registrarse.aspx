@@ -142,15 +142,11 @@
             margin-top: -20px;
             text-align: right;
         }
-        .auto-style1 {
-            left: 10px;
-            top: 7px;
-        }
         .auto-style2 {
             left: 2px;
             top: -32px;
         }
-    </style>
+        </style>
     <div class="form">
             <div id="signup">
                 <h1>REGISTRARSE</h1>
@@ -162,14 +158,14 @@
                             <label class="auto-style2">
                                 Nombre<span class="req">*</span>
                             </label>
-                            <input type="text" id="txtName" required autocomplete="off" />
+                            <asp:TextBox runat="server" type="text" id="txtName" required="true" autocomplete="off" />
                         </div>
 
                         <div class="field-wrap">
                             <label class="auto-style2">
                                 Apellido Paterno<span class="req">*</span>
                             </label>
-                            <input type="text" id="txtLastName" required autocomplete="off" />
+                            <asp:TextBox runat="server" type="text" id="txtLastName" required="true" autocomplete="off" />
                         </div>
                     </div>
 
@@ -177,21 +173,21 @@
                         <label class="auto-style2">
                             Apellido Materno<span class="req"></span>
                         </label>
-                        <input type="text" id="txtSecondLastName" autocomplete="off" />
+                        <asp:TextBox runat="server" type="text" id="txtSecondLastName" autocomplete="off" />
                     </div>
 
                     <div class="field-wrap">
                         <label class="auto-style2">
                             Correo Electrónico<span class="req">*</span>
                         </label>
-                        <input type="email" id="txtEmail" required autocomplete="off" />
+                        <asp:TextBox runat="server" type="email" id="txtEmail" required="true" autocomplete="off" />
                     </div>
 
                     <div class="field-wrap">
                         <label class="auto-style2">
                             Contraseña<span class="req">*</span>
                         </label>
-                        <input type="password" id="txtPassword" required autocomplete="off" />
+                        <asp:TextBox runat="server" type="password" id="txtPassword" required="true" autocomplete="off" />
                     </div>
 
                     <div class="field-wrap">
@@ -202,7 +198,7 @@
                         <input type="password" id="txtConfirmPassword" required autocomplete="off" />
                     </div>
 
-                    <button type="submit" id="btnRegister" class="button button-block">REGISTRARSE</button>
+                    <asp:Button runat="server" type="submit" ID="btnRegister" Text="REGISTRARSE" class="button button-block" OnClick="btnRegister_Click"/>
                 </div>
             </div>
         </div>
