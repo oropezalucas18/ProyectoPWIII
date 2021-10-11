@@ -28,8 +28,13 @@
             </td>
             <td style="width: 70%; height: 100%; vertical-align: top">
                 <fieldset>
+<<<<<<< HEAD
+                    <asp:Button ID="btnUpdate" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center"  Height="25px" CssClass="auto-style2" OnClick="btnUpdate_Click" />
+                    <asp:Button ID="btnDelete" runat="server" Text="Eliminar" Width="353px" Style="text-align: center"  BackColor="#FF3300" OnClick="btnDelete_Click"  />
+=======
                     <asp:Button ID="btnUpdate" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center" visible="False" Height="25px" CssClass="auto-style2" OnClick="btnUpdate_Click" />
                     <asp:Button ID="btnDelete" runat="server" Text="Eliminar" Width="353px" Style="text-align: center" visible="False" BackColor="#FF3300"  />
+>>>>>>> main
                 </fieldset>
             </td>
         </tr>

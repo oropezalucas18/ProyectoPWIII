@@ -236,3 +236,7 @@ D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaDatos.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaNegocios.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaDatos.pdb
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaNegocios.pdb
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\Proyecto_PWIII\obj\Debug\Proyecto_PWIII.csproj.AssemblyReference.cache
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\Proyecto_PWIII\obj\Debug\Proyecto_PWIII.csproj.CoreCompileInputs.cache
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\Proyecto_PWIII\obj\Debug\Proyecto_PWIII.dll
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\Proyecto_PWIII\obj\Debug\Proyecto_PWIII.pdb

@@ -21,6 +21,65 @@ namespace Proyecto_PWIII
 
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+            int id = 0;
+            System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PrograWebIIIBD.mdf;Integrated Security=True");
+
+            System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = @"UPDATE TeacherComment set Description ='"+txbComment.Text+ "' WHERE CommentID ='" + id+"'";
+            cmd.Connection = sqlConnection1;
+
+            sqlConnection1.Open();
+            cmd.ExecuteNonQuery();
+            sqlConnection1.Close();
+        }
+        void LoadDataGrid()
+        {
+            string res = "";
+            switch (res)
+            {
+                case "Kenny Vidangos":
+                    grdShow.DataSource = null;
+                    grdShow.DataSource = comentarioDocenteD.ShowKenny();
+                    break;
+                case "Pavel Caceres":
+                    grdShow.DataSource = null;
+                    grdShow.DataSource = comentarioDocenteD.ShowPavel();
+                    break;
+                case "Jose Gordillo":
+                    grdShow.DataSource = null;
+                    grdShow.DataSource = comentarioDocenteD.ShowJose();
+                    break;
+                case "Daniel Cosio":
+                    grdShow.DataSource = null;
+                    grdShow.DataSource = comentarioDocenteD.ShowDaniel();
+                    break;
+                case "David Escalera":
+                    grdShow.DataSource = null;
+                    grdShow.DataSource = comentarioDocenteD.ShowDavid();
+                    break;
+                default:
+                    grdShow.DataSource = null;
+                    grdShow.DataSource = comentarioDocenteD.ShowAll();
+                    break;
+            }
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            int id = 0;
+            System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PrograWebIIIBD.mdf;Integrated Security=True");
+
+            System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = @"DELETE FROM TeacherComment WHERE CommentID ='" + id + "'";
+            cmd.Connection = sqlConnection1;
+
+            sqlConnection1.Open();
+            cmd.ExecuteNonQuery();
+            sqlConnection1.Close();
+=======
             System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PrograWebIIIBD.mdf;Integrated Security=True");
 
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
@@ -62,6 +121,7 @@ namespace Proyecto_PWIII
                     grdShow.DataSource = comentarioDocenteD.ShowAll();
                     break;
             }
+>>>>>>> main
         }
     }
 }

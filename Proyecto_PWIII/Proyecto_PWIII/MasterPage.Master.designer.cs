@@ -42,22 +42,31 @@ namespace Proyecto_PWIII
         protected global::System.Web.UI.WebControls.Button btnPageInicio;
 
         /// <summary>
-        /// btnPageMateriasPre control.
+        /// cmbSubjects control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPageMateriasPre;
+        protected global::System.Web.UI.WebControls.DropDownList cmbSubjects;
 
         /// <summary>
-        /// btnPageDocente control.
+        /// cmbPreSubjects control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPageDocente;
+        protected global::System.Web.UI.WebControls.DropDownList cmbPreSubjects;
+
+        /// <summary>
+        /// cmbTeachers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList cmbTeachers;
 
         /// <summary>
         /// btnPageCerrarSesion control.

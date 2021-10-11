@@ -17,7 +17,7 @@ namespace CapaDatos
         public DataTable ShowDavid()
         {
             DataTable search = new DataTable();
-            SqlCommand command = new SqlCommand(@"SELECT * 
+            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente 
                                             FROM TeacherComment
                                             WHERE Teacher = 'David Escalera'")
             {
@@ -34,7 +34,7 @@ namespace CapaDatos
         public DataTable ShowDaniel()
         {
             DataTable search = new DataTable();
-            SqlCommand command = new SqlCommand(@"SELECT * 
+            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente 
                                             FROM TeacherComment
                                             WHERE Teacher = 'Daniel Cosio'")
             {
@@ -50,7 +50,7 @@ namespace CapaDatos
         public DataTable ShowKenny()
         {
             DataTable search = new DataTable();
-            SqlCommand command = new SqlCommand(@"SELECT * 
+            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente 
                                             FROM TeacherComment
                                             WHERE Teacher = 'Kenny Vidangos'")
             {
@@ -66,7 +66,7 @@ namespace CapaDatos
         public DataTable ShowPavel()
         {
             DataTable search = new DataTable();
-            SqlCommand command = new SqlCommand(@"SELECT * 
+            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente 
                                             FROM TeacherComment
                                             WHERE Teacher= 'Pavel Caceres'")
             {
@@ -82,7 +82,7 @@ namespace CapaDatos
         public DataTable ShowJose()
         {
             DataTable search = new DataTable();
-            SqlCommand command = new SqlCommand(@"SELECT * 
+            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente  
                                             FROM TeacherComment
                                             WHERE Teacher = 'Jose Gordillo'")
             {
@@ -97,7 +97,11 @@ namespace CapaDatos
         public DataTable ShowAll()
         {
             DataTable search = new DataTable();
+<<<<<<< HEAD
+            SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente
+=======
             SqlCommand command = new SqlCommand(@"SELECT * 
+>>>>>>> main
                                             FROM TeacherComment")
             {
                 CommandType = CommandType.Text

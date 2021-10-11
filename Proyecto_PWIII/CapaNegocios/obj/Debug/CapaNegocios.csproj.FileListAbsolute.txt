@@ -7,3 +7,12 @@ D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.cspro
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.pdb
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaNegocios.dll
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaNegocios.pdb
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaDatos.dll
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaDatos.pdb
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.AssemblyReference.cache
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.dll
+D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.pdb

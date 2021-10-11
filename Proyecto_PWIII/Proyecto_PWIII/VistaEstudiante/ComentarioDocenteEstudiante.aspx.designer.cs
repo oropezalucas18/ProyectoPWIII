@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Proyecto_PWIII
+namespace Proyecto_PWIII.VistaEstudiante
 {
 
 
