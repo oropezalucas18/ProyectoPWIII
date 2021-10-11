@@ -25,7 +25,7 @@
             <tr id="ContentPlaceHolder1_CURecursosEstudiante_TRMenu">
                 <td style="vertical-align: top" class="auto-style4">
                     <fieldset class="auto-style3">
-                        <asp:TextBox ID="txbComment" runat="server" Width="585px" Visible="false" Height="42px"></asp:TextBox>
+                        <asp:TextBox ID="txbComment" runat="server" Width="585px"  Height="42px"></asp:TextBox>
                         <table cellpadding="0" cellspacing="0" style="border-width: 0;">
                         </table>
                     </fieldset>

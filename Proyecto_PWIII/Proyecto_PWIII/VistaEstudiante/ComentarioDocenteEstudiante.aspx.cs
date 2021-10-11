@@ -21,6 +21,7 @@ namespace Proyecto_PWIII.VistaEstudiante
 
         protected void btnInsert_Click(object sender, EventArgs e)
         {
+            string estudiante = "Oropeza Lucas";
             string DocenteString;
             string res = "";
             switch (res)
@@ -48,7 +49,10 @@ namespace Proyecto_PWIII.VistaEstudiante
 
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = @"INSERT INTO TeacherComment (Description, StudentName, Teacher )" + "VALUES (" + txbComment.Text + "," + txbComment.Text + "," + DocenteString + ")";
+            cmd.CommandText = @"INSERT INTO TeacherComment (Description, StudentName, Teacher )" + "VALUES (@Description,@StudentName,@Teacher)";
+            cmd.Parameters.AddWithValue("@Description",txbComment.Text);
+            cmd.Parameters.AddWithValue("@StudentName", txbComment.Text);
+            cmd.Parameters.AddWithValue("@Teacher", DocenteString);
             cmd.Connection = sqlConnection1;
 
             sqlConnection1.Open();

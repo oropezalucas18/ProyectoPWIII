@@ -52,7 +52,10 @@ namespace Proyecto_PWIII
 
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = @"INSERT INTO CommentSubject (Description, StudentName, Subject )" + "VALUES (" + txbComment.Text + "," + txbComment.Text + "," + MateriaString + ")";
+            cmd.CommandText = @"INSERT INTO CommentSubject (Description, StudentName, Subject )" + "VALUES(@Description, @StudentName, @Subject)";
+            cmd.Parameters.AddWithValue("@Description", txbComment.Text);
+            cmd.Parameters.AddWithValue("@StudentName", txbComment.Text);
+            cmd.Parameters.AddWithValue("@Subject", MateriaString);
             cmd.Connection = sqlConnection1;
 
             sqlConnection1.Open();

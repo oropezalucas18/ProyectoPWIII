@@ -26,20 +26,18 @@
         <tr id="ContentPlaceHolder1_CURecursosEstudiante_TRMenu">
             <td style="vertical-align: top" class="auto-style4">
                 <fieldset class="auto-style3">
-                    <asp:TextBox ID="txbComment" runat="server" Width="585px" Visible="false"></asp:TextBox>
+                    <asp:TextBox ID="txbComment" runat="server" Width="585px"></asp:TextBox>
                     <table cellpadding="0" cellspacing="0" style="border-width: 0;">
                     </table>
                 </fieldset>
             </td>
             <td style="width: 70%; height: 100%; vertical-align: top">
                 <fieldset>
-<<<<<<< HEAD
+
                     <asp:Button ID="btnUpdate" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center"  Height="25px" CssClass="auto-style2" OnClick="btnUpdate_Click" />
                     <asp:Button ID="btnDelete" runat="server" Text="Eliminar" Width="353px" Style="text-align: center"  BackColor="#FF3300" OnClick="btnDelete_Click"  />
-=======
-                    <asp:Button ID="btnUpdate" runat="server" Text="Confirmar edicion" Width="353px" Style="text-align: center" visible="False" Height="25px" CssClass="auto-style2" />
-                    <asp:Button ID="btnDelete" runat="server" Text="Eliminar" Width="353px" Style="text-align: center" visible="False" BackColor="#FF3300"  />
->>>>>>> main
+
+
                 </fieldset>
             </td>
         </tr>

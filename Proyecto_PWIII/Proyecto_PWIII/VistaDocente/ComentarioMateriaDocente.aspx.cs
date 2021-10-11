@@ -26,7 +26,9 @@ namespace Proyecto_PWIII
 
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = @"UPDATE CommentSubject set Description ='" + txbComment.Text + "' WHERE CommentID ='" + id + "'";
+            cmd.CommandText = @"UPDATE CommentRequirement set Description = @Description WHERE CommentID =@CommentID";
+            cmd.Parameters.AddWithValue("@Description", txbComment.Text);
+            cmd.Parameters.AddWithValue("@CommentID", id);
             cmd.Connection = sqlConnection1;
 
             sqlConnection1.Open();
