@@ -13,7 +13,7 @@ namespace Proyecto_PWIII
 {
     public partial class ComentarioDocenteDocente : System.Web.UI.Page
     {
-        D_ComentarioMateria comentarioMateriaD = new D_ComentarioMateria();
+        D_ComentarioDocente comentarioDocenteD = new D_ComentarioDocente();
         protected void Page_Load(object sender, EventArgs e)
         {
             LoadDataGrid();
@@ -34,39 +34,34 @@ namespace Proyecto_PWIII
         }
         void LoadDataGrid()
         {
-            int res = 0;
+            string res = "";
             switch (res)
             {
-                case 1:
+                case "Kenny Vidangos":
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioMateriaD.ShowAnimacion();
+                    grdShow.DataSource = comentarioDocenteD.ShowKenny();
                     break;
-                case 2:
+                case "Pavel Caceres":
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioMateriaD.ShowCiencias();
+                    grdShow.DataSource = comentarioDocenteD.ShowPavel();
                     break;
-                case 3:
+                case "Jose Gordillo":
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioMateriaD.ShowInglesI();
+                    grdShow.DataSource = comentarioDocenteD.ShowJose();
                     break;
-                case 4:
+                case "Daniel Cosio":
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioMateriaD.ShowMatematica();
+                    grdShow.DataSource = comentarioDocenteD.ShowDaniel();
                     break;
-                case 5:
+                case "David Escalera":
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioMateriaD.ShowProgramacionI();
-                    break;
-                case 6:
-                    grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioMateriaD.ShowSoftware();
+                    grdShow.DataSource = comentarioDocenteD.ShowDavid();
                     break;
                 default:
                     grdShow.DataSource = null;
-                    grdShow.DataSource = comentarioMateriaD.ShowAll();
+                    grdShow.DataSource = comentarioDocenteD.ShowAll();
                     break;
             }
-            
         }
     }
 }

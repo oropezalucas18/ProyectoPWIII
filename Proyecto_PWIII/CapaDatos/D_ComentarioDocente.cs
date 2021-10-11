@@ -14,12 +14,12 @@ namespace CapaDatos
     {
         SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\App_Data\PrograWebIIIBD.mdf;Integrated Security=True;Connect Timeout=30");
 
-        public DataTable ShowAnimacion()
+        public DataTable ShowDavid()
         {
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
                                             FROM TeacherComment
-                                            WHERE Teacher = ''")
+                                            WHERE Teacher = 'David Escalera'")
             {
                 CommandType = CommandType.Text
             };
@@ -31,12 +31,12 @@ namespace CapaDatos
             return search;
         }
 
-        public DataTable ShowCiencias()
+        public DataTable ShowDaniel()
         {
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
                                             FROM TeacherComment
-                                            WHERE Teacher = ''")
+                                            WHERE Teacher = 'Daniel Cosio'")
             {
                 CommandType = CommandType.Text
             };
@@ -47,12 +47,12 @@ namespace CapaDatos
             return search;
         }
 
-        public DataTable ShowMatematica()
+        public DataTable ShowKenny()
         {
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
                                             FROM TeacherComment
-                                            WHERE Teacher = ''")
+                                            WHERE Teacher = 'Kenny Vidangos'")
             {
                 CommandType = CommandType.Text
             };
@@ -63,12 +63,12 @@ namespace CapaDatos
             return search;
         }
 
-        public DataTable ShowProgramacionI()
+        public DataTable ShowPavel()
         {
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
                                             FROM TeacherComment
-                                            WHERE Teacher= ''")
+                                            WHERE Teacher= 'Pavel Caceres'")
             {
                 CommandType = CommandType.Text
             };
@@ -79,12 +79,26 @@ namespace CapaDatos
             return search;
         }
 
-        public DataTable ShowInglesI()
+        public DataTable ShowJose()
         {
             DataTable search = new DataTable();
             SqlCommand command = new SqlCommand(@"SELECT * 
                                             FROM TeacherComment
-                                            WHERE Teacher = ''")
+                                            WHERE Teacher = 'Jose Gordillo'")
+            {
+                CommandType = CommandType.Text
+            };
+
+            connection.Open();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+            dataAdapter.Fill(search);
+            return search;
+        }
+        public DataTable ShowAll()
+        {
+            DataTable search = new DataTable();
+            SqlCommand command = new SqlCommand(@"SELECT * 
+                                            FROM TeacherComment")
             {
                 CommandType = CommandType.Text
             };
@@ -95,20 +109,5 @@ namespace CapaDatos
             return search;
         }
 
-        public DataTable ShowFundamentosSoftware()
-        {
-            DataTable search = new DataTable();
-            SqlCommand command = new SqlCommand(@"SELECT * 
-                                            FROM TeacherComment
-                                            WHERE Teacher = ''")
-            {
-                CommandType = CommandType.Text
-            };
-
-            connection.Open();
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-            dataAdapter.Fill(search);
-            return search;
-        }
     }
 }

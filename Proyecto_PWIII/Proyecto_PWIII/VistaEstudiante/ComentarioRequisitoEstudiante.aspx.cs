@@ -20,37 +20,37 @@ namespace Proyecto_PWIII
 
         protected void btnInsert_Click(object sender, EventArgs e)
         {
-            string MateriaString;
+            string RequirementString;
             string res = "";
             switch (res)
             {
                 case "Animacion Digital":
-                    MateriaString = "Animacion Digital";
+                    RequirementString = "Animacion Digital";
                     break;
                 case "Ciencias de la Computacion":
-                    MateriaString = "Ciencias de la Computacion";
+                    RequirementString = "Ciencias de la Computacion";
                     break;
                 case "Matematica Computacional":
-                    MateriaString = "Matematica Computacional";
+                    RequirementString = "Matematica Computacional";
                     break;
                 case "Programacion I":
-                    MateriaString = "Programacion I";
+                    RequirementString = "Programacion I";
                     break;
                 case "Ingles tecnico I":
-                    MateriaString = "Ingles tecnico I";
+                    RequirementString = "Ingles tecnico I";
                     break;
                 case "Fundamentos de desarrollo de software":
-                    MateriaString = "Fundamentos de desarrollo de software";
+                    RequirementString = "Fundamentos de desarrollo de software";
                     break;
                 default:
-                    MateriaString = "";
+                    RequirementString = "";
                     break;
             }
             System.Data.SqlClient.SqlConnection sqlConnection1 = new System.Data.SqlClient.SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\PrograWebIIIBD.mdf;Integrated Security=True");
 
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "INSERT INTO CommentRequirement (Description, StudentName, Subject )" + "VALUES (" + txbComment.Text + "," + MateriaString + "," + txbComment.Text + ")";
+            cmd.CommandText = "INSERT INTO CommentRequirement (Description, StudentName, Subject )" + "VALUES (" + txbComment.Text + "," + txbComment.Text + "," + RequirementString + ")";
             cmd.Connection = sqlConnection1;
 
             sqlConnection1.Open();
