@@ -48,11 +48,7 @@ namespace Proyecto_PWIII.VistaEstudiante
 
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-<<<<<<< HEAD
             cmd.CommandText = @"INSERT INTO TeacherComment (Description, StudentName, Teacher )" + "VALUES (" + txbComment.Text + "," + txbComment.Text + "," + DocenteString + ")";
-=======
-            cmd.CommandText = "INSERT INTO TeacherComment (Description, StudentName, Teacher )" + "VALUES (" + txbComment.Text + "," + DocenteString + "," + DocenteString + ")";
->>>>>>> main
             cmd.Connection = sqlConnection1;
 
             sqlConnection1.Open();
