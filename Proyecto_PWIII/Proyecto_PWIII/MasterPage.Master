@@ -160,15 +160,16 @@
                                     <li id="ContentPlaceHolder1_liInicio">
                                         <asp:Button runat="server" ID="btnPageInicio" Text="INICIO" OnClick="btnPageInicio_Click" Style="display: inline-block; font-size: 15px; height: 50px; width: 80px; background-color: black; color: white" />
                                     <li id="ContentPlaceHolder1_liMaterias">
-                                        <select name="materias" style="display: inline-block; font-size: 13px; " class="auto-style9">
-                                            <option value="materia0">Materia</option>
-                                            <option value="materia1">Animación Digital</option>
-                                            <option value="materia2">Fundamentos de Desarrollo de SW</option>
-                                            <option value="materia3">Fundamentos de las Ciencias de la Computación</option>
-                                            <option value="materia4">Programación I</option>
-                                            <option value="materia5">Matématica Computacional</option>
-                                            <option value="materia6">Inglés Técnico I</option>
-                                        </select>
+                                        <asp:DropDownList runat="server" ID="cmbSubjects" style="display: inline-block; font-size: 15px; background-color:black; color:white" class="auto-style9" OnSelectedIndexChanged="cmbSubjects_SelectedIndexChanged">
+                                            <asp:ListItem Selected="True">MATERIAS</asp:ListItem>
+                                            <asp:ListItem>Animación Digital</asp:ListItem>
+                                            <asp:ListItem>Programación I</asp:ListItem>
+                                            <asp:ListItem>Fundamentos de Desarrollo de Software</asp:ListItem>
+                                            <asp:ListItem>Fundamentos de las Ciencias de la Computación</asp:ListItem>
+                                            <asp:ListItem>Matemática Computacional</asp:ListItem>
+                                            <asp:ListItem>Inglés Técnico I</asp:ListItem>
+                                            
+                                        </asp:DropDownList>
                                     <li id="ContentPlaceHolder1_liMateriasPre">
                                         <asp:Button runat="server" ID="btnPageMateriasPre" Text="MATERIAS PRE-REQUISITO" OnClick="btnPageMateriasPre_Click" Style="display: inline-block; font-size: 13px; background-color: black; color: white" class="auto-style8" Width="192px" />
                                     <li id="ContentPlaceHolder1_liDocente">

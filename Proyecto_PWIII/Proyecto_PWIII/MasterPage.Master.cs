@@ -16,7 +16,7 @@ namespace Proyecto_PWIII
 
         protected void btnPageInicio_Click(object sender, EventArgs e)
         {
-            
+            Response.Redirect("PaginaInicio.aspx");
         }
 
         protected void btnPageMateriasPre_Click(object sender, EventArgs e)
@@ -32,6 +32,11 @@ namespace Proyecto_PWIII
         protected void btnPageCerrarSesion_Click(object sender, EventArgs e)
         {
 
+        }
+
+        protected void cmbSubjects_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Response.Cookies["subject"]["name"] = cmbSubjects.SelectedValue;
         }
     }
 }
