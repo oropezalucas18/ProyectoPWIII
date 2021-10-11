@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="N_ComentarioDocente.cs" />
     <Compile Include="N_ComentarioMateria.cs" />
+    <Compile Include="N_ComentarioRequisito.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

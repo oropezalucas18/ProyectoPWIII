@@ -207,8 +207,6 @@ D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\roslyn\vbc.rsp
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\roslyn\VBCSCompiler.exe
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\roslyn\VBCSCompiler.exe.config
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Web.Infrastructure.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.Helpers.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.Mvc.dll
@@ -216,13 +214,6 @@ D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.Razor.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.WebPages.Deployment.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.WebPages.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.WebPages.Razor.dll
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.Unity.dll
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.ServiceLocation.dll
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.Unity.Interception.dll
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.EnterpriseLibrary.Data.pdb
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.Helpers.xml
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.Mvc.xml
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.Razor.xml
@@ -230,9 +221,6 @@ D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.WebPages.xm
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.WebPages.Deployment.xml
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\System.Web.WebPages.Razor.xml
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.Unity.pdb
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.ServiceLocation.pdb
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Microsoft.Practices.Unity.Interception.pdb
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\es\System.Web.Helpers.resources.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\es\System.Web.Mvc.resources.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\es\System.Web.Razor.resources.dll
@@ -246,7 +234,5 @@ D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\obj\Debug\Proyecto_PWIII.d
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\obj\Debug\Proyecto_PWIII.pdb
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaDatos.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaNegocios.dll
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Entidades.dll
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaDatos.pdb
 D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaNegocios.pdb
-D:\GitHub\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\Entidades.pdb
