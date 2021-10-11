@@ -21,7 +21,9 @@ namespace Proyecto_PWIII
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            
+            Response.Cookies["user"]["email"] = txtEmail.Text;
+            Response.Cookies["user"]["password"] = txtPassword.Text;
+            Response.Cookies["person"].Expires = DateTime.Now.AddDays(1);
         }
     }
 }

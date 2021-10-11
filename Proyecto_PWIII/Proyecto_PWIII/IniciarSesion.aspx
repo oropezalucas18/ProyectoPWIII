@@ -170,14 +170,14 @@
                         <label class="auto-style2">
                             Correo Electrónico<span class="req">*</span>
                         </label>
-                        <input type="email" id="txtEmail" autocomplete="off" />
+                        <asp:TextBox runat="server" type="email" id="txtEmail" autocomplete="off" />
                     </div>
 
                     <div class="field-wrap">
                         <label class="auto-style2">
                             Contraseña<span class="req">*</span>
                         </label>
-                        <input type="password" id="txtPassword" autocomplete="off" />
+                        <asp:TextBox runat="server" type="password" id="txtPassword" autocomplete="off" />
                     </div>
 
                     <asp:Button runat="server" class="button button-block" id="btnLogin" Text="Iniciar Sesión" OnClick="btnLogin_Click"/>

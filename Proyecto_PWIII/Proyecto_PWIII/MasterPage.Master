@@ -121,11 +121,6 @@
             color: #C7C7C7;
         }
 
-        .auto-style2 {
-            height: 50px;
-            width: 98px;
-        }
-
         .auto-style4 {
             height: 50px;
             width: 113px;
@@ -144,47 +139,55 @@
         .auto-style8 {
             height: 50px;
             width: 192px;
+            
+        }
+        .auto-style9 {
+            height: 50px;
+            width: 212px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <table style="text-align: center" class="container-footer-header">
-            <tbody>
-                <tr>
-                    <td class="auto-style7">
-                        <ul class="mainmenu" style="text-align: left">
-                            <li id="ContentPlaceHolder1_liInicio">
-                                <a id="ContentPlaceHolder1_LKBInicio" style="display: inline-block; font-size: 13px; height: 50px; width: 80px;"><b style="font-size: 35px">I</b>NICIO</a></li>
-                            <li id="ContentPlaceHolder1_liMaterias">
-                                <select name="materias" style="display: inline-block; font-size: 13px; height: 50px; width: 80px;">
-                                    <option value="materia0">Materia</option>
-                                    <option value="materia1">Animación Digital</option>
-                                    <option value="materia2">Fundamentos de Desarrollo de SW</option>
-                                    <option value="materia3">Fundamentos de las Ciencias de la Computación</option>
-                                    <option value="materia4">Programación I</option>
-                                    <option value="materia5">Matématica Computacional</option>
-                                    <option value="materia6">Inglés Técnico I</option>
-                                </select>
-                            <li id="ContentPlaceHolder1_liMateriasPre">
-                                <a id="ContentPlaceHolder1_LKBMateriasPre" style="display: inline-block; font-size: 13px;" class="auto-style8"><b style="font-size: 35px">M</b>ATERIAS PRE-REQUISITO</a></li>
-                            <li id="ContentPlaceHolder1_liDocente">
-                                <a id="ContentPlaceHolder1_LKBDocente" style="display: inline-block; font-size: 13px; height: 50px; width: 95px;"><b style="font-size: 35px">D</b>OCENTE</a>
-                            </li>
-                            <li id="ContentPlaceHolder1_liCerrarSesion">
-                                <a id="ContentPlaceHolder1_LKBCerrarSesion" style="display: inline-block; font-size: 13px;" class="auto-style4"><b style="font-size: 35px">C</b>ERRAR SESION</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <img src="Icons/logoUnivalle.png" class="auto-style5" />
-                        <br />
-                        <asp:Label runat="server" CssClass="auto-style7">La respuesta científica al futuro</asp:Label>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </header>
+
     <form id="form1" runat="server">
+        <div>
+            <header>
+                <table style="text-align: center" class="container-footer-header">
+                    <tbody>
+                        <tr>
+                            <td class="auto-style7">
+                                <ul class="mainmenu" style="text-align: left">
+                                    <li id="ContentPlaceHolder1_liInicio">
+                                        <asp:Button runat="server" ID="btnPageInicio" Text="INICIO" OnClick="btnPageInicio_Click" Style="display: inline-block; font-size: 15px; height: 50px; width: 80px; background-color: black; color: white" />
+                                    <li id="ContentPlaceHolder1_liMaterias">
+                                        <select name="materias" style="display: inline-block; font-size: 13px; " class="auto-style9">
+                                            <option value="materia0">Materia</option>
+                                            <option value="materia1">Animación Digital</option>
+                                            <option value="materia2">Fundamentos de Desarrollo de SW</option>
+                                            <option value="materia3">Fundamentos de las Ciencias de la Computación</option>
+                                            <option value="materia4">Programación I</option>
+                                            <option value="materia5">Matématica Computacional</option>
+                                            <option value="materia6">Inglés Técnico I</option>
+                                        </select>
+                                    <li id="ContentPlaceHolder1_liMateriasPre">
+                                        <asp:Button runat="server" ID="btnPageMateriasPre" Text="MATERIAS PRE-REQUISITO" OnClick="btnPageMateriasPre_Click" Style="display: inline-block; font-size: 13px; background-color: black; color: white" class="auto-style8" Width="192px" />
+                                    <li id="ContentPlaceHolder1_liDocente">
+                                        <asp:Button runat="server" ID="btnPageDocente" Text="DOCENTE" OnClick="btnPageDocente_Click" Style="display: inline-block; font-size: 15px; background-color: black; color: white; height: 50px; width: 95px;" class="auto-style8" />
+                                    </li>
+                                    <li id="ContentPlaceHolder1_liCerrarSesion">
+                                        <asp:Button runat="server" ID="btnPageCerrarSesion" Text="CERRAR SESION" OnClick="btnPageCerrarSesion_Click" Style="display: inline-block; font-size: 15px; background-color: black; color: white" class="auto-style4" Width="140px" />
+                                </ul>
+                            </td>
+                            <td>
+                                <asp:Image runat="server" ImageUrl="~/Icons/logoUnivalle.png" class="auto-style5" />
+                                <br />
+                                <asp:Label runat="server" CssClass="auto-style7">La respuesta científica al futuro</asp:Label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </header>
+        </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolderBody" runat="server">
             </asp:ContentPlaceHolder>
@@ -197,7 +200,7 @@
             <div class="container-body">
 
                 <div class="colum1">
-                    <img src="~/Icons/univalle.png" />
+                    <asp:Image runat="server" ImageUrl="~/Icons/univalle.png" />
                     <h1>Sobre Univalle</h1>
                     <p>
                         La Universidad asume como visión institucional,
@@ -209,29 +212,29 @@
                 <div class="colum2">
                     <h1>En las Redes</h1>
                     <div class="row">
-                        <img src="~/Icons/facebook.png" />
+                        <asp:Image runat="server" ImageUrl="~/Icons/facebook.png" />
                         <label>Facebook Cochabamba</label>
                     </div>
                     <div class="row">
-                        <img src="~/Icons/instagram.png">
+                        <asp:Image runat="server" ImageUrl="~/Icons/instagram.png" />
                         <label>Instagram Univalle</label>
                     </div>
                     <div class="row">
-                        <img src="~/Icons/youtube.png">
+                        <asp:Image runat="server" ImageUrl="~/Icons/youtube.png"/>
                         <label>Youtube Univalle</label>
                     </div>
                 </div>
                 <div class="colum3">
                     <h1>Comunicate</h1>
                     <div class="row2">
-                        <img src="~/Icons/house.png">
+                        <asp:Image runat="server" ImageUrl="~/Icons/house.png"/>
                         <label>
                             Campus Universitario Tiquipaya
                             Calle Guillermina Martinez s/n
                         </label>
                     </div>
                     <div class="row2">
-                        <img src="~/Icons/smartphone.png">
+                        <asp:Image runat="server" ImageUrl="~/Icons/smartphone.png"/>
                         <label>
                             Telefono:
                             (591)4-4318800
@@ -241,7 +244,7 @@
                         </label>
                     </div>
                     <div class="row2">
-                        <img src="~/Icons/contact.png">
+                        <asp:Image runat="server" ImageUrl="~/Icons/contact.png"/>
                         <label>
                             info@univalle.edu
                             SIU
@@ -256,7 +259,7 @@
                     © 2021 Univalle Todos los Derechos Reservados | <a href="">Antuan</a>
                 </div>
                 <div class="information">
-                    <a href="">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+                    <a href="">Información Compañía</a> | <a href="">Privación y Política</a> | <a href="">Términos y Condiciones</a>
                 </div>
             </div>
         </div>
