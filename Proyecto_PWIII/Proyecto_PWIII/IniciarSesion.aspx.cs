@@ -24,6 +24,10 @@ namespace Proyecto_PWIII
             Response.Cookies["user"]["email"] = txtEmail.Text;
             Response.Cookies["user"]["password"] = txtPassword.Text;
             Response.Cookies["person"].Expires = DateTime.Now.AddDays(1);
+            Session["email"] = txtEmail.Text;
+            Session["password"] = txtPassword.Text;
+
+            Response.Redirect("PaginaInicio.aspx");
         }
     }
 }
