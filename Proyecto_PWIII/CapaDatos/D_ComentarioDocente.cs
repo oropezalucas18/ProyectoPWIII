@@ -97,11 +97,7 @@ namespace CapaDatos
         public DataTable ShowAll()
         {
             DataTable search = new DataTable();
-<<<<<<< HEAD
             SqlCommand command = new SqlCommand(@"SELECT Description AS Descripcion, StudentName AS Estudiante, TeacherName AS Docente
-=======
-            SqlCommand command = new SqlCommand(@"SELECT * 
->>>>>>> main
                                             FROM TeacherComment")
             {
                 CommandType = CommandType.Text

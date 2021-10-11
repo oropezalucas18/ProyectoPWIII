@@ -2,7 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderBody" runat="server">
-    <b>¡Bienvenido a la página de Univalle para estudiantes!</b><br />
+    <div Style="background-color: darkred; font-size: 25px">
+        <b >¡Bienvenido a la página de Univalle para estudiantes!</b><br />
     <br />
     Aquí podrás comentar sobre cualquier materia y/o docente que necesites para tu formación. <br />
     Podrás encontrar opiniones de todo tipo sobre los docentes, información sobre las materias que necesites (tanto requisitos para 
@@ -11,4 +12,6 @@
     <br />
     Recuerda que debes ser respetuoso con los comentarios que hagas, ya que los docentes podrán verlos y decidir si 
     editar tu comentario o eliminarlo.
+    </div>
+    
 </asp:Content>

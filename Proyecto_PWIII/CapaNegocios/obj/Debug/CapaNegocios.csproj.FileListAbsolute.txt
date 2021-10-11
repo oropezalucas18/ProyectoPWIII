@@ -16,3 +16,12 @@ D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegoci
 D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
 D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.dll
 D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.pdb
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaNegocios.dll
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaNegocios.pdb
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaDatos.dll
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\bin\Debug\CapaDatos.pdb
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.AssemblyReference.cache
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.CoreCompileInputs.cache
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.csproj.CopyComplete
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.dll
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\CapaNegocios\obj\Debug\CapaNegocios.pdb

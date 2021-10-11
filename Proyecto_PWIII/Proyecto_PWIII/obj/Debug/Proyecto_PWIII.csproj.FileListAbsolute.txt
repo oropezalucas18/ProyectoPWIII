@@ -240,3 +240,7 @@ D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\Proyecto_PWIII\obj\Debug\Proyecto
 D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\Proyecto_PWIII\obj\Debug\Proyecto_PWIII.csproj.CoreCompileInputs.cache
 D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\Proyecto_PWIII\obj\Debug\Proyecto_PWIII.dll
 D:\Descargas\ProyectoPWIII-main\Proyecto_PWIII\Proyecto_PWIII\obj\Debug\Proyecto_PWIII.pdb
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaDatos.dll
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaNegocios.dll
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaDatos.pdb
+C:\Users\orope\Documents\GitHub\Proyecto_PWIII\ProyectoPWIII\Proyecto_PWIII\Proyecto_PWIII\bin\CapaNegocios.pdb
